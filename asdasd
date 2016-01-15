@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class TicTacToeRunner
+{
+    public static void main(String[] args)
+    {
+        Scanner reader = new Scanner(System.in);
+        System.out.print('\u000C');
+        System.out.println("Enter an X or an O, X goes first and O goes second");
+        char sign = reader.next().charAt(0);
+        TicTacToe game = new TicTacToe();
+        game.sign=sign;
+        
+    }
+}
